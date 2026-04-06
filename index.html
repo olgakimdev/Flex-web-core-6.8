@@ -7,18 +7,57 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="nav_container">
-      <div class="nav_items">
-        <img src="ref/burger.png" alt="burger">
-        <img src="ref/Group.png" height=40 alt="group">
-        <img src="ref/divider.png" alt="divider">
-        <img src="ref/repair.png" alt="repair">
-        <img src="ref/checkstatus.png " alt="checkstatus">
+    <main class='page'>
+      <!-- <h2 class='page__title'>Services</h2> -->
+      <div class="nav-container">
+        <div class='burger'>
+           <img src="ref/burger.svg" alt="burger">
+        </div>
+        <div class='logo'>
+           <img src="ref/Group.svg" alt="logo">
+        </div>
+        <div class='divider'>
+           <img src="ref/divider.svg" alt="divider">
+        </div>
+        <div class='repair'>
+           <img src="ref/repair.svg" alt="repair">
+        </div>
+        <div class='check'>
+           <img src="ref/checkstatus.svg" alt="check">
+        </div>
       </div>
-     </div>
-    <div class="main_container">
+      <div class="service-container">
+        <div class="service-title">
+          <img src="ref/highlight.svg" alt="image" width="4px">
+          <h1>Услуги и сервисы</h1>
+        </div>
+        <div class="service-button">
+          <div class="brands">Ремонтируемые бренды</div>
+          <div class="devices">Ремонтируемые устройства</div>
+          <div class="price">Цены на услуги</div>
+          <div class="location">Адреса сервисных центров</div>
+          <div class="promotion">Специальные цены</div>
+        </div>
+        <div class="service-content">
+          <text>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</text>
+        </div>
+
+        <div class='content-wrapper'>
+          <div id="more-content" style="display: none;">
+          Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+          </div>
+          <!-- <img src="ref/expand.svg" alt="arrow" width="20px"> -->
+          <button class='read-more-btn' onclick="document.getElementById('more-content').style.display='block'; this.style.display='none';">
+          <img src="ref/expand.svg" alt="arrow" width="25px">
+          Читать далее
+        </button>
+        </div>
+
+        <div class="service-image">
+          <img src="ref/picture.svg" alt="image">
+        </div>
       </div>
-      
+    </main>
   </body>
 </html>
 

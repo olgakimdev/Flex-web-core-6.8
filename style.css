@@ -1,24 +1,137 @@
-.nav_container{
+.nav-container{
     display: flex;
     flex-direction: row;
-    background-color: #eeececed;
+    background-color: #FFFFFF;
     justify-content: center;
     align-items: center;
+    gap: 15px;
     max-width: 320px;
     min-height: 88px;
 }
 
-.nav_items{
+.nav-items{
     min-width: 40px;
     height: 40px;
 }
 
-.main_container{
+.service-container{
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: column;
     background-color: #F8F8F8;
-    justify-content: center;
     max-width: 320px;
     min-height: 509px;
+}
+
+.service-title{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0px 20px;
+    align-items: center;
+}
+
+.service-content{
+    display: flex;
+    flex-direction: column;
+    font-family: TT Lakes;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: -0.6px;
+    margin: 0px 0px 0px 15px;
+}
+
+h1{
+    color: #1B1C21;
+    font-size: 20px;
+    letter-spacing: -0.6px;
+    font-family: TT Lakes;
+    font-weight: 700;
+}
+
+.service-button{
+    color: black;
+    font-size: 10px;
+    font-family: TT Lakes;
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    gap: 15px;
+    white-space: nowrap;
+    align-items: center;
+    margin: 0px 0px 20px 15px;
+}
+
+.brands, .devices, .price, .location, .promotion{
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    border: 2px solid #B8FFEC;
+}
+
+@media (max-width: 509px) {
+    .brands{
+        display: none;
+    }
+}
+
+/* @media (max-width: 509px) {
+    .devices{
+        display: none;
+    }
+} */
+
+@media (max-width: 509px) {
+    .price{
+        display: none;
+    }
+}
+
+@media (max-width: 509px) {
+    .location{
+        display: none;
+    } 
+}
+
+@media (max-width: 509px) {
+    .promotion{
+        display: none;
+    }
+
+    /* сделать кнопку с исчезающим градиентом */
+    
+.read-more-btn{
+  font-family: 'TT Lakes', sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #333; 
+  background: transparent; 
+  border: none;
+  padding: 8px 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./ref/TTLakesNeueExp-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    line line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./ref/TTLakesNeueExp-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: bold;
+    line line-height: 24px;
+    letter-spacing: 0.2px;
 }
