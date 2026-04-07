@@ -16,6 +16,7 @@
 
 .service-container{
     display: flex;
+    flex-flow: row nowrap;
     flex-direction: column;
     background-color: #F8F8F8;
     max-width: 320px;
@@ -27,6 +28,11 @@
     gap: 10px;
     margin: 20px 0px 20px;
     align-items: center;
+    font-family: TT Lakes;
+    font-weight: 700;
+    color: #1B1C21;
+    font-size: 15px;
+    letter-spacing: -0.6px;
 }
 
 .service-content{
@@ -39,14 +45,6 @@
     margin: 0px 0px 0px 15px;
 }
 
-h1{
-    color: #1B1C21;
-    font-size: 20px;
-    letter-spacing: -0.6px;
-    font-family: TT Lakes;
-    font-weight: 700;
-}
-
 .service-button{
     color: black;
     font-size: 10px;
@@ -54,13 +52,15 @@ h1{
     display: inline-flex;
     box-sizing: border-box;
     justify-content: flex-start;
+    flex-flow: row nowrap;
+    overflow: auto;
     gap: 15px;
     white-space: nowrap;
     align-items: center;
     margin: 0px 0px 20px 15px;
 }
 
-.brands, .devices, .price, .location, .promotion{
+.service-button > button{
     height: 24px;
     display: flex;
     justify-content: center;
@@ -71,8 +71,24 @@ h1{
     border: 2px solid #B8FFEC;
 }
 
-@media (max-width: 509px) {
+@media (max-width: 768px) {
     .brands{
+        display: none;
+    }
+
+    .devices{
+        display: none;
+    }
+
+    .price{
+        display: none;
+    }
+
+    .location{
+        display: none;
+    }
+
+    .promotion{
         display: none;
     }
 }
@@ -83,13 +99,13 @@ h1{
     }
 } */
 
-@media (max-width: 509px) {
+/* @media (max-width: 768px) {
     .price{
         display: none;
     }
-}
+} */
 
-@media (max-width: 509px) {
+/* @media (max-width: 768px) {
     .location{
         display: none;
     } 
@@ -98,12 +114,10 @@ h1{
 @media (max-width: 509px) {
     .promotion{
         display: none;
-    }
-
-    /* сделать кнопку с исчезающим градиентом */
-    
+    } */
+     
 .read-more-btn{
-  font-family: 'TT Lakes', sans-serif;
+  font-family: 'TT Lakes';
   font-weight: 100;
   font-size: 14px;
   letter-spacing: -0.5px;
@@ -120,18 +134,19 @@ h1{
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('./ref/TTLakesNeueExp-Thin.woff2') format('woff2');
+    src: url('./ref/TTLakes-Regular.woff') format('woff');
     font-weight: 100;
     font-style: normal;
-    line line-height: 24px;
+    font-size: 14px;
     letter-spacing: 0.2px;
+    color: #1B1C21;
 }
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('./ref/TTLakesNeueExp-Bold.woff2') format('woff2');
+    src: url('./ref/TTLakes-Bold.woff') format('woff');
     font-weight: 700;
     font-style: bold;
-    line line-height: 24px;
-    letter-spacing: 0.2px;
+    font-size: 28px;
+    letter-spacing: -0.6px;
 }
