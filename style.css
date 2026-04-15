@@ -21,11 +21,16 @@ line-height: 1.6;
     align-items: center;
     gap: 15px;
     min-height: 88px;
+    margin: 0px 20px 0px 20px;
 }
 
 .nav-items{
     min-width: 40px;
     height: 40px;
+}
+
+.logo {
+    margin-right: auto;
 }
 
 .service-container{
@@ -39,7 +44,7 @@ line-height: 1.6;
 
 .service-title{
     display: flex;
-    gap: 10px;
+    gap: 15px;
     margin: 20px 0px 20px;
     align-items: center;
     font-family: TT Lakes;
@@ -49,14 +54,28 @@ line-height: 1.6;
     letter-spacing: -0.6px;
 }
 
+.laptop-label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0px 20px 0px 0px;
+}
+
+h1 {
+    margin-right: auto;  
+}
+
 .service-content{
     display: flex;
     flex-direction: column;
     font-family: TT Lakes;
     font-weight: 100;
     font-size: 14px;
-    margin: 15px;
     max-width: 768px;
+    gap: 15px;
 }
 
 .grid-box{
@@ -66,14 +85,16 @@ line-height: 1.6;
     margin: 20px;
 }
 
-.read-more {
-    margin-top: 15px;
+.read-more{
     display: flex;
     align-items: center;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-shadow: 0.5px 0 0 currentColor;
+    font-size: 16px;
 }
 
 .service-button{
-    color: black;
     display: inline-flex;
     box-sizing: border-box;
     justify-content: flex-start;
@@ -86,6 +107,7 @@ line-height: 1.6;
 }
 
 .service-button > button{
+    color: #7E7E82;
     font-size: 16px;
     font-family: TT Lakes;
     height: 24px;
@@ -98,6 +120,7 @@ line-height: 1.6;
 }
 
 .service-button > button1{
+    color: #7E7E82;
     font-size: 16px;
     font-family: TT Lakes;
     height: 24px;
@@ -129,16 +152,38 @@ line-height: 1.6;
 }
 
 @media (max-width: 768px) {
+    .service-container{
+        min-width: 320px;
+
+    }
     .grid-box{
         grid-template-columns: 1fr;
+    }
+    .divider{
+        display: none;
     }
 
     .call{
         display: none;
     }
 
+    .profile{
+        display: none;
+    }
+
     .chat{
         display: none;
+    }
+
+    .laptop-label{
+       display: none; 
+    }
+
+    .text-box2{
+        display: none;
+    }
+    .image{
+        width: 320px;
     }
 }
 
@@ -146,10 +191,37 @@ line-height: 1.6;
     .grid-box{
         grid-template-columns: 1fr 1fr;
     }
+    .laptop-label{
+       display: none; 
+    }
+    .image{
+        width: 360px;
+    }
+    .service-title{
+        font-size: 28px;
+    }
 }
 
 @media (min-width: 1120px){
+    .nav-container{
+        display: none; 
+    }
     .grid-box{
-        grid-template-columns: repeat (2, 1fr);
-}
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .image{
+        width: 532px;
+    }
+
+    .service-button{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+    }
+
+    .service-title{
+        font-size: 28px;
+        margin: 40px 0px 20px 0px;
+    }
 }
